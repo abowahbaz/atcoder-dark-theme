@@ -6,8 +6,8 @@
 // @author       magurofly , abowahbaz
 // @match        https://atcoder.jp/*
 // @grant        none
-// @downloadURL https://update.greasyfork.org/scripts/423564/AtCoder%20Theme%3A%20Solarized%20Dark.user.js
-// @updateURL https://update.greasyfork.org/scripts/423564/AtCoder%20Theme%3A%20Solarized%20Dark.meta.js
+// @downloadURL https://github.com/abowahbaz/atcoder-dark-theme/edit/main/atcoder-dark-theme.user.js
+// @updateURL https://github.com/abowahbaz/atcoder-dark-theme/blob/main/atcoder-dark-theme.meta.js
 // ==/UserScript==
 
 (function () {
