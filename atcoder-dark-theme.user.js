@@ -9,7 +9,6 @@
 // @downloadURL https://update.greasyfork.org/scripts/423564/AtCoder%20Theme%3A%20Solarized%20Dark.user.js
 // @updateURL https://update.greasyfork.org/scripts/423564/AtCoder%20Theme%3A%20Solarized%20Dark.meta.js
 // ==/UserScript==
-
 (function () {
   "use strict";
   const editorFontSize = "10pt";
@@ -32,11 +31,26 @@
   const green = "#859900";
 
   //handle user avatar
-  const avatar = document.querySelector(".avatar");
-  if (avatar.attributes.src.value == "//img.atcoder.jp/assets/icon/avatar.png") {
-    avatar.setAttribute("src","https://raw.githubusercontent.com/abowahbaz/atcoder-dark-theme/main/avatar.png"
+  let avatar = document.querySelector(".avatar");
+  if (avatar != null) {
+    if (
+      avatar.attributes.src.value === "//img.atcoder.jp/assets/icon/avatar.png"
+    ) {
+      avatar.setAttribute(
+        "src",
+        "https://raw.githubusercontent.com/abowahbaz/atcoder-dark-theme/main/avatar.png"
+      );
+    }
+  }
+  // handle favicon
+  let favicon = document.querySelector('link[rel="shortcut icon"]');
+  if (favicon != null) {
+    favicon.setAttribute(
+      "href",
+      "https://raw.githubusercontent.com/abowahbaz/atcoder-dark-theme/main/avatar.png"
     );
   }
+
   document.head.insertAdjacentHTML(
     "afterend",
     String.raw`
@@ -124,7 +138,7 @@
         {
         border:1px solid #fdf6e3;
         }
-      
+
         a {
           background: transparent;
         }
