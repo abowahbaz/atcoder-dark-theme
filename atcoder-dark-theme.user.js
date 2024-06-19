@@ -6,13 +6,12 @@
 // @author       magurofly , abowahbaz
 // @match        https://atcoder.jp/*
 // @grant        none
-// @downloadURL https://github.com/abowahbaz/atcoder-dark-theme/edit/main/atcoder-dark-theme.user.js
-// @updateURL https://github.com/abowahbaz/atcoder-dark-theme/blob/main/atcoder-dark-theme.meta.js
+// @downloadURL https://update.greasyfork.org/scripts/423564/AtCoder%20Theme%3A%20Solarized%20Dark.user.js
+// @updateURL https://update.greasyfork.org/scripts/423564/AtCoder%20Theme%3A%20Solarized%20Dark.meta.js
 // ==/UserScript==
 
 (function () {
   "use strict";
-
   const editorFontSize = "10pt";
   const base04 = "#268bd2";
   const base03 = "#252525";
@@ -32,6 +31,14 @@
   const cyan = "#2aa198";
   const green = "#859900";
 
+  //handle user avatar
+  const avatar = document.querySelector(".avatar");
+  if (avatar.attributes.src.value === "/assets/images/avatar.png") {
+    avatar.setAttribute(
+      "src",
+      "https://raw.githubusercontent.com/abowahbaz/atcoder-dark-theme/main/avatar.png"
+    );
+  }
   document.head.insertAdjacentHTML(
     "afterend",
     String.raw`
@@ -119,8 +126,7 @@
         {
         border:1px solid #fdf6e3;
         }
-
-
+      
         a {
           background: transparent;
         }
