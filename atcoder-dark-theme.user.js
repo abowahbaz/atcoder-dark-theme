@@ -119,15 +119,15 @@
          color:${base04};
         }
         .panel-default .panel-title a{
-        color:${base3};
+        color:${base04};
         }
 
         .timeago
         {
-        color:#586e75;
+        color:${base2};
         }
         small{
-       color:#586e75;
+       color:${base2};
         }
         .user-unrated
         {
