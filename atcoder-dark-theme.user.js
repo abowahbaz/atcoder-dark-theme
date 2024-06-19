@@ -33,10 +33,8 @@
 
   //handle user avatar
   const avatar = document.querySelector(".avatar");
-  if (avatar.attributes.src.value === "//img.atcoder.jp/assets/icon/avatar.png") {
-    avatar.setAttribute(
-      "src",
-      "https://raw.githubusercontent.com/abowahbaz/atcoder-dark-theme/main/avatar.png"
+  if (avatar.attributes.src.value == "//img.atcoder.jp/assets/icon/avatar.png") {
+    avatar.setAttribute("src","https://raw.githubusercontent.com/abowahbaz/atcoder-dark-theme/main/avatar.png"
     );
   }
   document.head.insertAdjacentHTML(
