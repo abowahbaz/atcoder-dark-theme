@@ -138,8 +138,11 @@
         {
         border:1px solid #fdf6e3;
         }
-
-        a {
+        .black
+        {
+        color:${base2};
+        }
+               a {
           background: transparent;
         }
         a:active,
@@ -4869,7 +4872,7 @@
           margin-top: 0;
           margin-bottom: 0;
           font-size: 16px;
-          color: inherit;
+          color: ${base2};
         }
         .panel-title > a {
           color: inherit;
