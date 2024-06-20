@@ -51,6 +51,15 @@
     );
   }
 
+  //handle fav page
+  let title = document.querySelector("title");
+  if (title != null && title.textContent.includes("Fav")) {
+    let panelTitles = document.querySelectorAll(".panel-title");
+    panelTitles.forEach((panelTitle) => {
+      panelTitle.style.color = base2;
+    });
+  }
+
   document.head.insertAdjacentHTML(
     "afterend",
     String.raw`
@@ -4872,7 +4881,7 @@
           margin-top: 0;
           margin-bottom: 0;
           font-size: 16px;
-          color: ${base2};
+          color: inherit;
         }
         .panel-title > a {
           color: inherit;
