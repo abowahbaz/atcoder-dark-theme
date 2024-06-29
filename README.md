@@ -11,9 +11,12 @@
 # Installation :gear:
 
 1. You need to have **Tampermonkey** installed in your browser. You can download it from [here](https://www.tampermonkey.net/).
-2. Install the script by clicking [here](atcoder-dark-theme.user.js) , then clicking on `Raw` button.
-3. Go to [AtCoder](https://atcoder.jp/), and you should see the dark theme.
-4. Enjoy! :tada:
+2. Make sure to apply the developer mode in your browser.
+3. Install the script by clicking [here](atcoder-dark-theme.user.js) , then clicking on `Raw` button.
+4. Go to [AtCoder](https://atcoder.jp/), and you should see the dark theme.
+5. Enjoy! :tada:
+
+
 
 # Contribution :handshake:
 
